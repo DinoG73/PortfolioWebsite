@@ -18,7 +18,7 @@
   --color-gray-5: #2a2e35;
   --color-gray-6: #12181d;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .2);
 }
 
 body {
@@ -60,31 +60,26 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(197, 205, 90);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(90, 205, 92);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(205, 146, 90);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(205, 90, 136);
 }
 
 .active {
@@ -135,4 +130,48 @@ section {
   font-size: 1.4rem;
   color: var(--color-gray-2);
   pointer-events: none;
-}/*# sourceMappingURL=sass.css.map */
+}
+
+/* HEADER CONTENT*/
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+.header-content .left-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-content .left-header .h-shape {
+  transition: all 0.4s ease-in-out;
+  width: 65%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+          clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+}
+.header-content .left-header .image {
+  border-radius: var(--br-sm-2);
+  height: 90%;
+  width: 68%;
+  margin-left: 4rem;
+  background-color: var(--color-black);
+  transition: all 0.4s ease-in-out;
+}
+.header-content .left-header .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(100%);
+}
+.header-content .left-header .image img:hover {
+  filter: grayscale(0);
+}
+
+/* INDEPENDEND COMPONENTS*//*# sourceMappingURL=sass.css.map */
