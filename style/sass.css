@@ -526,6 +526,15 @@ section {
   padding-bottom: 1rem;
 }
 
+/*CONTACT SECTION*/
+.contact-content-container {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-container .left-contact {
+  flex: 2;
+}
+
 /* INDEPENDEND COMPONENTS*/
 .btn-container {
   display: flex;
